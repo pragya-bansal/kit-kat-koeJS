@@ -1,0 +1,43 @@
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Canvas */
+#gameCanvas {
+    border: 3px solid #333;
+}
+
+/* Winner Overlay */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Play again button hover glow */
+#playAgainBtn {
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+#playAgainBtn:hover {
+    transform: scale(1.1);
+}
